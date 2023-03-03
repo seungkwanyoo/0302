@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+<style> *{font-size: 12pt;} </style>
+<script>
+    function mycal(num){
+      var isopchecked=false;
+      var oper=false;
+      var su1=frm.num1.value;
+      var su2=frm.num2.value;
+    
+      for(let i=0; i<frm.op.length; i++){
+        if(oper=frm.op[i].checked;)
+            frm.op[i].id;
+      }
+    }//end
+</script>
+</head>
+<body>
+    <h2>13testcal.html</h2>
+    <form name="frm">
+        숫자1 : <input type="text" name="num1" value="7"><br>
+        숫자2 : <input type="text" name="num2" value="2"><br>
+    
+        연산 :
+        <input type="radio" name="op" id="add" checked><label for="add">+더하기</label>
+        <input type="radio" name="op" id="sub"><label for="sub">-빼기</label>
+        <input type="radio" name="op" id="mul"><label for="mul">*곱하기</label>
+        <input type="radio" name="op" id="div"><label for="div">/몫</label>
+        <br>
+        결과 : 
+         <input type="text" id="res" readonly="readonly"><br>
+         <input type="button" value="사칙연산처리" onclick="mycal()">
+         <input type="reset" value="지우개">
+    </form>
+</body>
+</html>
